@@ -1,5 +1,5 @@
 <div class="top-image">
-    <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
+    <img src="<?php echo base_url();?>assets/images/faq-top.jpg" alt="" />
 </div><!-- Page Top Image -->
 
 <section class="inner-page">
@@ -42,17 +42,18 @@
                     <h3 class="sub-head">SEND US A MESSAGE</h3>
 
                     <p>Required fields <span>*</span></p>
-                    <form method="post"  action="contact.php" name="contactform" id="contactform">
+                    <form method="post"  action="#" name="contactform" id="contactform">
                         <label for="name" accesskey="U">Full name <span>*</span></label>
-                        <input name="name" class="form-control input-field" type="text" id="name" size="30" value="" />
+                        <input name="vname" class="form-control input-field" type="text" id="name" size="30" value="" placeholder="Your Name" />
                         <label for="email" accesskey="E">Email Address <span>*</span></label>
-
-                        <input name="email" class="form-control input-field" type="text" id="email" size="30" value="" />
+                        <input name="vemail" class="form-control input-field" type="text" id="email" size="30" value="" placeholder="Your Email"/>
+                        <label for="subject" accesskey="S">Subject <span>*</span></label>
+                        <input name="vname" class="form-control input-field" type="text" id="name" size="30" value="" placeholder="Subject"/>
                         <label for="comments" accesskey="C">Message <span>*</span></label>
-                        <textarea name="comments" rows="9" id="comments" rows="7" class="form-control input-field"></textarea>
-                        <input type="submit" class="form-button submit" id="submit" value="SEND MESSAGE" />
+                        <textarea name="msg" rows="9" id="comments" rows="7" class="form-control input-field" placeholder="Type your text here..."></textarea>
+                        <input type="submit" class="form-button submit" id="send" value="SEND MESSAGE" />
                     </form>
-
+                        <h3><?php include "secure_email_code.php"?></h3> 
                 </div>
             </div>	<!-- Message Form -->
         </div>
@@ -80,7 +81,7 @@
                     <div class="service">
                         <img src="<?php echo base_url();?>assets/images/service1.png" alt="">
                         <h4>OUR <span>COMMITMENT </span></h4>
-                        <p>With your Support we fight for a future without cancer</p>
+                        <p>With your Support we are commited to the fight for a future without cancer</p>
                         <a href="" title="">Volunteer</a>
                     </div>
                 </div>
@@ -89,7 +90,7 @@
                     <div class="service">
                         <img src="<?php echo base_url();?>assets/images/service2.png" alt="">
                         <h4>20 <span>countries</span></h4>
-                        <p>Today, more than 5,000 Relay For Life events take place across twenty countries. </p>
+                        <p>More than 5,000 Relay For Life events take place across twenty countries. </p>
                         <a href="https://en.wikipedia.org/wiki/Relay_For_Life" target="_blank" title="">READ</a>
                     </div>
                 </div>
@@ -97,7 +98,7 @@
                     <div class="service">
                         <img src="<?php echo base_url();?>assets/images/service3.png" alt="">
                         <h4>88.3% <span>of all KSH</span></h4>
-                        <p>All the Money we raise goes to Supporting the Fight Against Cancer in Kenya</p>
+                        <p>Money we raise goes to Supporting the Fight Against Cancer in Kenya</p>
                         <a href="<?php echo base_url();?>relay/donate" title="">DONATE</a>
                     </div>
                 </div>
